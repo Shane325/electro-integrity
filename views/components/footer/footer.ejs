@@ -20,11 +20,11 @@
                 <div class="widget widget-contact-info">
                     <h3 class="widget-title">Construction HQ</h3>
                     <ul class="contact-info">
-                        <li><i class="fa fa-map-marker"></i> 300 Pennsylvania Ave NW,
-                            Washington, DC 20006, USA</li>
-                        <li><i class="fa fa-phone"></i> <a href="#" class="important">158-985-66-22</a></li>
-                        <li><i class="fa fa-fax"></i> <a href="#">158-985-66-33</a></li>
-                        <li><i class="fa fa-envelope"></i> <a href="mailto:mail@domain.com">mail@domain.com</a></li>
+                      <li><i class="fa fa-map-marker"></i> <%= common.address.street %>,
+                        <%= common.address.city %>, <%= common.address.state %> <%= common.address.zip %></li>
+                      <li><i class="fa fa-phone"></i> <a href="tel:<%= common.phone.src %>" class="important"><%= common.phone.display %></a></li>
+                      <li><i class="fa fa-fax"></i> <a href="tel:<%= common.fax.src %>"><%= common.fax.display %></a></li>
+                      <li><i class="fa fa-envelope"></i> <a href="mailto:<%= common.email %>"><%= common.email %></a></li>
                     </ul>
                 </div>
                 <!-- /Contact Info Widget -->
@@ -33,8 +33,6 @@
                 <!-- Text Widget -->
                 <div class="widget widget-text">
                     <h3 class="widget-title">Working Hours</h3>
-                    <p>Visit us at our HQ for a mean cup of coffee and a fantastic
-                        consulting team.</p>
                 </div>
                 <!-- /Text Widget -->
                 <!-- Working Hours Widget -->
@@ -76,10 +74,7 @@
                     <!-- Social Widget -->
                     <div class="widget widget-social">
                         <ul class="social">
-                            <li><a href="https://twitter.com/anpsthemes"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.facebook.com/anpsthemes"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://profiles.wordpress.org/anpsthemes/"><i class="fa fa-wordpress"></i></a></li>
+                          <li><a href="<%= common.social.yelp %>"><i class="fa fa-yelp"></i></a></li>
                         </ul>
                     </div>
                     <!-- /Social Widget -->
