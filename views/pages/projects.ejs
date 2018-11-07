@@ -8,9 +8,15 @@
 </head>
 
 <body>
-    <% include ../components/projects/projects-content %>
-        <% include ../partials/foot %>
+    <div class="site">
+        <!-- HEADER -->
+        <% include ../components/header/header-secondary %>
+            <!-- MAIN CONTENT -->
+            <% include ../components/projects/projects-content %>
+                <!-- FOOTER -->
+                <% include ../components/footer/footer %>
+    </div>
+    <% include ../partials/foot %>
 </body>
 
 </html>
-
