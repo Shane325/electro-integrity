@@ -1,0 +1,43 @@
+<% js.forEach(function(src){ %>
+    <script src="<%=src %>"></script>
+    <% }) %>
+        <script>
+            /* Revolution Slider Settings */
+            /* Documentation: http://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/ */
+            jQuery(document).ready(function()
+            {
+                jQuery('#slider1').revolution(
+                {
+                    sliderType: 'standard',
+                    sliderLayout: 'auto',
+                    delay: 9000,
+                    navigation:
+                    {
+                        arrows:
+                        {
+                            enable: true
+                        }
+                    },
+                    gridwidth: [1200, 992, 786, 480],
+                    gridheight: [740, 600, 500, 400],
+                    responsiveLevels: [1200, 992, 786, 480],
+                    navigation:
+                    {
+                        arrows:
+                        {
+                            style: 'construction-arrows',
+                            enable: true,
+                            left:
+                            {
+                                h_offset: 0
+                            },
+                            right:
+                            {
+                                h_offset: 0
+                            },
+                        },
+                        onHoverStop: 'off'
+                    },
+                });
+            });
+        </script>

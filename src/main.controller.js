@@ -4,7 +4,7 @@
  * Module dependencies
  *
  */
-// let config = require('./config/config')
+let config = require('./config/config')
 // let commonConfig = require('./config/common')
 // let homeConfig = require('./config/home')
 // let aboutConfig = require('./config/about')
@@ -27,7 +27,10 @@
  * @returns - renders home page
  */
 module.exports.getHome = (req, res) => {
-  res.render('../views/pages/index')
+  res.render('../views/pages/index', {
+    js: config.lib.js,
+    css: config.lib.css
+  })
 }
 
 /**
@@ -75,7 +78,7 @@ module.exports.getContact = (req, res) => {
   res.render('../views/pages/contact')
 }
 
-/** 
+/**
  * Send contact email
  *
  */

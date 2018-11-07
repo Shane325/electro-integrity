@@ -1,4 +1,5 @@
-<meta http-equiv="content-type" content="text/html; charset=utf-8" /></link>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</link>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
@@ -9,5 +10,9 @@
 <meta name="description" content="Welcome to Electro Integrity">
 <meta name="keywords" content="Construction,Commercial,Residential,Labor,Tools,Projects">
 
-<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700'>
-<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic">
+
+<% css.forEach(function(src){ %>
+    <link type="text/css" rel="stylesheet" href="<%= src %>">
+    <% }) %>

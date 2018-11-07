@@ -7,9 +7,16 @@
     <% include ../partials/head %>
 </head>
 
-<body>
-    <% include ../components/home/home-content %>
-        <% include ../partials/foot %>
+<body class="stickyheader">
+    <div class="site">
+      <!-- HEADER -->
+        <% include ../components/header/header-primary %>
+        <!-- MAIN CONTENT -->
+            <% include ../components/home/home-content %>
+            <!-- FOOTER -->
+            <% include ../components/footer/footer %>
+    </div>
+    <% include ../partials/foot %>
 </body>
 
 </html>
