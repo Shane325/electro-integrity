@@ -24,5 +24,5 @@ module.exports = {
   social: {
     yelp: 'https://www.yelp.com/biz/electro-integrity-san-francisco-5'
   },
-  assets: 'http://assets.electro-integrity.com'
+  assets: 'http://d248w22qq7dshu.cloudfront.net'
 }
