@@ -46,7 +46,7 @@ module.exports.getAbout = (req, res) => {
     js: config.lib.js,
     css: config.lib.css,
     pageTitle: aboutConfig.pageTitle,
-    state: aboutConfig.stat,
+    state: aboutConfig.state,
     common: commonConfig
   })
 }
@@ -61,7 +61,7 @@ module.exports.getServices = (req, res) => {
     js: config.lib.js,
     css: config.lib.css,
     pageTitle: servicesConfig.pageTitle,
-    state: servicesConfig.stat,
+    state: servicesConfig.state,
     common: commonConfig
   })
 }
@@ -76,7 +76,7 @@ module.exports.getProjects = (req, res) => {
     js: config.lib.js,
     css: config.lib.css,
     pageTitle: projectsConfig.pageTitle,
-    state: projectsConfig.stat,
+    state: projectsConfig.state,
     common: commonConfig
   })
 }
@@ -100,7 +100,7 @@ module.exports.getContact = (req, res) => {
     js: config.lib.js,
     css: config.lib.css,
     pageTitle: contactConfig.pageTitle,
-    state: contactConfig.stat,
+    state: contactConfig.state,
     common: commonConfig
   })
 }
