@@ -10,7 +10,7 @@ let homeConfig = require('./config/home')
 let aboutConfig = require('./config/about')
 let servicesConfig = require('./config/services')
 let projectsConfig = require('./config/projects')
-// let projectConfig = require('./config/project')
+let projectConfig = require('./config/project')
 let contactConfig = require('./config/contact')
 // let HttpStatus = require('http-status-codes')
 // let MAILGUN_API_KEY = config.mailgun.api_key
@@ -77,7 +77,8 @@ module.exports.getProjects = (req, res) => {
     css: config.lib.css,
     pageTitle: projectsConfig.pageTitle,
     state: projectsConfig.state,
-    common: commonConfig
+    common: commonConfig,
+    projects: projectsConfig.projects
   })
 }
 
@@ -87,7 +88,14 @@ module.exports.getProjects = (req, res) => {
  * @returns - renders project page
  */
 module.exports.getProject = (req, res) => {
-  res.render('../views/pages/project')
+  res.render('../views/pages/project', {
+    js: config.lib.js,
+    css: config.lib.css,
+    pageTitle: projectConfig.pageTitle,
+    state: projectConfig.state,
+    common: commonConfig,
+    project: req.project
+  })
 }
 
 /**

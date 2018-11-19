@@ -1,43 +1,77 @@
-<% js.forEach(function(src){ %>
-    <script src="<%=src %>"></script>
-    <% }) %>
-        <script>
-            /* Revolution Slider Settings */
-            /* Documentation: http://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/ */
-            jQuery(document).ready(function()
+<% if (state === 'contact') { %>
+    <script>
+        function initMap() {
+            var sf = {
+                lat: 37.76471859999999,
+                lng: -122.43194010000002
+            }
+
+            var map = new google.maps.Map(document.getElementById(
+                'electroIntegrityMap'),
             {
-                jQuery('#slider1').revolution(
-                {
-                    sliderType: 'standard',
-                    sliderLayout: 'auto',
-                    delay: 9000,
-                    navigation:
-                    {
-                        arrows:
+                center: sf,
+                zoom: 14
+            })
+
+            var marker = new google.maps.Marker(
+            {
+                position: sf,
+                map: map
+            })
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdNjb0maBMhvMUc9pYa4sTo6_3lqnxvhI&callback=initMap"
+        async defer></script>
+    <% } %>
+        <% js.forEach(function(src){ %>
+            <script src="<%=src %>"></script>
+            <% }) %>
+                <% if (state === 'home') { %>
+                    <script>
+                        /* Revolution Slider Settings */
+                        /* Documentation: http://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/ */
+                        jQuery(document).ready(function()
                         {
-                            enable: true
-                        }
-                    },
-                    gridwidth: [1200, 992, 786, 480],
-                    gridheight: [740, 600, 500, 400],
-                    responsiveLevels: [1200, 992, 786, 480],
-                    navigation:
-                    {
-                        arrows:
-                        {
-                            style: 'construction-arrows',
-                            enable: true,
-                            left:
+                            jQuery('#slider1').revolution(
                             {
-                                h_offset: 0
-                            },
-                            right:
-                            {
-                                h_offset: 0
-                            },
-                        },
-                        onHoverStop: 'off'
-                    },
-                });
-            });
-        </script>
+                                sliderType: 'standard',
+                                sliderLayout: 'auto',
+                                delay: 9000,
+                                navigation:
+                                {
+                                    arrows:
+                                    {
+                                        enable: true
+                                    }
+                                },
+                                gridwidth: [1200, 992, 786,
+                                    480
+                                ],
+                                gridheight: [740, 600, 500,
+                                    400
+                                ],
+                                responsiveLevels: [1200, 992,
+                                    786,
+                                    480
+                                ],
+                                navigation:
+                                {
+                                    arrows:
+                                    {
+                                        style: 'construction-arrows',
+                                        enable: true,
+                                        left:
+                                        {
+                                            h_offset: 0
+                                        },
+                                        right:
+                                        {
+                                            h_offset: 0
+                                        },
+                                    },
+                                    onHoverStop: 'off'
+                                },
+                            });
+                        });
+                    </script>
+                    <% } %>

@@ -1,0 +1,19 @@
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="gallery-fs">
+                  <figure> <img src="<%= project.imgs[ 0 ].src %>" alt="<%= project.imgs[ 0 ].alt %>">
+                        <figcaption>A modern smart house system</figcaption>
+                    </figure>
+                    <div class="gallery-fs-nav"> <button class="gallery-fs-fullscreen"><i class="fa fa-arrows-alt"></i></button>                        </div>
+                    <div class="gallery-fs-thumbnails gallery-fs-thumbnails-col-5">
+                        <% project.imgs.forEach(function (img, index) { %>
+                        <a href="<%= img.src %>" title="<%= img.alt %>" class="<% if (index == 0) { %> selected <% } %>"> <img src="<%= img.src %>" alt="<%= img.alt %>"> </a>
+                            <% }) %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

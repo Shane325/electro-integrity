@@ -1,0 +1,28 @@
+<section class="section padding-top-small padding-bottom-big">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="projects">
+                    <ul class="filter">
+                        <li><button data-filter="*" class="selected">All projects</button></li>
+                        <li><button data-filter="residential">Residential</button></li>
+                        <li><button data-filter="commercial">Commercial</button></li>
+                        <li><button data-filter="ev-installs">Electric Vehicle Installs</button></li>
+                    </ul>
+                    <div class="row projects-content">
+                        <% projects.forEach(function(project){ %>
+                        <div class="projects-item col-xs-6 col-md-4 <%= project.categories %>">
+                          <div class="projects-item-wrap"> <img src="<%= project.portfolioImg.src %>" alt="<%= project.portfolioImg.alt %>">
+                                    <div class="project-hover">
+                                      <h3 class="project-title text-uppercase"><%= project.name %></h3>
+                                      <p><%= project.address %></p>
+                                      <a class="btn btn-md" href="/project/<%= project.id %>">Learn More</a>                                        </div>
+                                </div>
+                            </div>
+                            <% }) %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
