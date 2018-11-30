@@ -3811,3 +3811,7 @@ img.error404 {
 .margin-bottom-75 {
   margin-bottom: 75px;
 }
+
+.rev_slider video {
+  object-fit: contain !important;
+}
