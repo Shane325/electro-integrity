@@ -1,5 +1,5 @@
 <!-- Site Header -->
-<header class="site-header transparent">
+<header class="site-header classic relative">
     <div class="container">
         <div class="header-wrap clearfix">
             <!-- Logo -->
@@ -10,25 +10,6 @@
             <!-- Site navigation -->
             <nav class="site-navigation pull-right">
                 <div class="mobile-wrap">
-                    <!-- Above Navbar -->
-                    <div class="above-nav-bar">
-                        <ul class="contact-info transparent">
-                            <li><i class="fa fa-phone"></i>
-                                <a href="tel:<%= common.phone.src %>">
-                                    <%= common.phone.display %>
-                                </a>
-                            </li>
-                            <li><i class="fa fa-envelope"></i>
-                                <a href="mailto:<%= common.email %>">
-                                    <%= common.email %>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="social social-transparent-border">
-                            <li><a href="<%= common.social.yelp %>" target="_blank"><i class="fa fa-yelp"></i></a></li>
-                        </ul>
-                    </div>
-                    <!-- /Above Navbar -->
                     <!-- Main menu -->
                     <ul id="main-menu" class="main-menu">
                         <li class="menu-item <% if(state === 'home') { %>current-menu-item<% } %>"><a href="/">Home</a></li>

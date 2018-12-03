@@ -22,7 +22,8 @@ module.exports = {
   },
   license: '',
   social: {
-    yelp: 'https://www.yelp.com/biz/electro-integrity-san-francisco-5'
+    yelp: 'https://www.yelp.com/biz/electro-integrity-san-francisco-5',
+    google: 'http://www.google.com/search?q=electro+integrity'
   },
   assets: 'http://d248w22qq7dshu.cloudfront.net'
 }

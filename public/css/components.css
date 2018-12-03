@@ -2,6 +2,11 @@
  * Accordion
  */
 
+:root {
+  --main-color: #3498db;
+  --hover-color: #76c0f2;
+}
+
 .panel-group {
     border: 1px solid #e7e7e7;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.14);
@@ -57,8 +62,8 @@
 }
 
 .panel-heading a {
-    background-color: #fab702;
-    border-bottom: 1px solid #fab702;
+    background-color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
     color: #fff;
     display: block;
     min-height: 50px;
@@ -75,7 +80,7 @@
 
 .panel-heading a.collapsed:hover,
 .panel-heading a.collapsed:focus {
-    color: #fab702;
+    color: var(--main-color);
 }
 
 .panel-heading a.collapsed:after {
@@ -151,7 +156,7 @@ blockquote:not([class]),
 
 blockquote:not([class]) p,
 .blockquote-style-1 p {
-    border-left: 5px solid #fab702;
+    border-left: 5px solid var(--main-color);
     color: #000;
     font-style: italic;
     line-height: 1.5em;
@@ -167,7 +172,7 @@ blockquote:not([class]) p,
 }
 
 .blockquote-style-2 p {
-    border-left: 7px solid #fab702;
+    border-left: 7px solid var(--main-color);
     line-height: 1.5em;
     padding: 0;
     padding-left: 19px;
@@ -348,7 +353,7 @@ blockquote:not([class]) p,
 
 .breadcrumb a:hover,
 .breadcrumb a:focus {
-    color: #fab702;
+    color: var(--main-color);
 }
 
 .page-header+.breadcrumb {
@@ -360,7 +365,7 @@ blockquote:not([class]) p,
  */
 
 .btn {
-    background-color: #fab702;
+    background-color: var(--main-color);
     border: none;
     border-radius: 4px;
     color: #fff;
@@ -379,7 +384,7 @@ blockquote:not([class]) p,
 
 .btn:hover,
 .btn:focus {
-    background-color: #ffcc43;
+    background-color: var(--hover-color);
     color: #fff;
 }
 
@@ -430,26 +435,26 @@ blockquote:not([class]) p,
 
 .btn.btn-minimal {
     background: none;
-    color: #fab702;
+    color: var(--main-color);
     padding-left: 0;
     padding-right: 0;
 }
 
 .btn.btn-minimal:hover,
 .btn.btn-minimal:focus {
-    color: #ffcc43;
+    color: var(--hover-color);
 }
 
 /** Button Gradient */
 
 .btn.btn-gradient {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), transparent 18px), #fab702;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), transparent 18px), var(--main-color);
     color: #fff;
 }
 
 .btn.btn-gradient:hover,
 .btn.btn-gradient:focus {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), transparent 18px), #ffcc43;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), transparent 18px), var(--hover-color);
 }
 
 /** Button Dark */
@@ -680,7 +685,7 @@ blockquote:not([class]) p,
 }
 
 .comment-date i {
-    color: #fab702;
+    color: var(--main-color);
     font-size: 12px;
 }
 
@@ -806,7 +811,7 @@ header.classic .contact-info.transparent li i {
 }
 
 .top-bar .contact-info a:hover {
-    color: #fab702;
+    color: var(--main-color);
 }
 
 .top-bar .contact-info.transparent li {
@@ -830,7 +835,7 @@ header.classic .contact-info li {
 /** Above nav bar version */
 
 header.site-header.classic nav.site-navigation .above-nav-bar .contact-info li a:hover {
-    color: #fab702;
+    color: var(--main-color);
 }
 
 /** Style-4 version */
@@ -910,7 +915,7 @@ header.site-header .contact-info.style-4 li {
 /** Sidebar Version (minimal) */
 
 .sidebar .download a {
-    background-color: #fab702;
+    background-color: var(--main-color);
     border-radius: 4px;
     color: #fff;
     display: block;
@@ -920,7 +925,7 @@ header.site-header .contact-info.style-4 li {
 
 .sidebar .download a:hover,
 .sidebar .download a:focus {
-    background-color: #ffcc43;
+    background-color: var(--hover-color);
 }
 
 .sidebar .download i {
@@ -1066,7 +1071,7 @@ header.site-header .contact-info.style-4 li {
 .gallery-fs .owl-item a:hover:after,
 .gallery-fs .owl-item a:focus:after,
 .gallery-fs .owl-item a.selected:after {
-    border-color: #fab702;
+    border-color: var(--main-color);
     cursor: pointer;
 }
 
@@ -1155,7 +1160,7 @@ header.site-header .contact-info.style-4 li {
 }
 
 .icon-media {
-    color: #fab702;
+    color: var(--main-color);
     font-size: 30px;
 }
 
@@ -1208,7 +1213,7 @@ header.site-header .contact-info.style-4 li {
  */
 
 .info-table-icon {
-    color: #fab702;
+    color: var(--main-color);
     font-size: 18px;
 }
 
@@ -1315,7 +1320,7 @@ header.site-header .contact-info.style-4 li {
 }
 
 .list li:before {
-    color: #fab702;
+    color: var(--main-color);
     font-family: "FontAwesome";
     margin-right: 14px;
 }
@@ -1363,7 +1368,7 @@ header.site-header .contact-info.style-4 li {
 
 .social a {
     transition: background-color .2s, color .2s;
-    background-color: #fab702;
+    background-color: var(--main-color);
     border-radius: 4px;
     color: #fff;
     display: block;
@@ -1374,7 +1379,7 @@ header.site-header .contact-info.style-4 li {
 
 .social a:hover,
 .social a:focus {
-    background-color: #ffcc43;
+    background-color: var(--hover-color);
     color: #fff;
 }
 
@@ -1433,7 +1438,7 @@ header.site-header .contact-info.style-4 li {
 .top-bar .social.social-minimal a:hover,
 .top-bar .social.social-minimal a:focus {
     background: none;
-    color: #fab702;
+    color: var(--main-color);
 }
 
 /** Social border */
@@ -1459,7 +1464,7 @@ header.site-header .contact-info.style-4 li {
 .social.social-border a:hover,
 .social.social-border a:focus {
     background: none;
-    color: #fab702;
+    color: var(--main-color);
 }
 
 .social.social-border i {
@@ -1492,7 +1497,7 @@ header.site-header .contact-info.style-4 li {
 .social.social-transparent-border a:hover,
 .social.social-transparent-border a:focus {
     background: none;
-    color: #fab702;
+    color: var(--main-color);
 }
 
 .site-header.transparent .social.social-transparent-border a {
@@ -1502,7 +1507,7 @@ header.site-header .contact-info.style-4 li {
 .site-header.transparent .social.social-transparent-border a:hover,
 .site-header.transparent .social.social-transparent-border a:focus {
     background: none;
-    color: #fab702;
+    color: var(--main-color);
 }
 
 .site-header.transparent .social.social-transparent-border a,
@@ -1515,7 +1520,7 @@ header.site-header .contact-info.style-4 li {
  */
 
 .star-rating {
-    color: #fab702;
+    color: var(--main-color);
     line-height: 18px;
     overflow: hidden;
     position: relative;
@@ -1556,7 +1561,7 @@ header.site-header .contact-info.style-4 li {
 
 .stars {
     clear: both;
-    color: #fab702;
+    color: var(--main-color);
     display: inline-block;
     height: 18px;
     margin: 0 0 0 10px;
@@ -1582,7 +1587,7 @@ header.site-header .contact-info.style-4 li {
 
 .stars a:hover,
 .stars a:focus {
-    color: #fab702;
+    color: var(--main-color);
 }
 
 .stars a:before {
@@ -1625,7 +1630,7 @@ header.site-header .contact-info.style-4 li {
 }
 
 .title:after {
-    background-color: #fab702;
+    background-color: var(--main-color);
     width: 73px;
     z-index: 1;
 }
@@ -1820,7 +1825,7 @@ ul.page-numbers>li .next .fa {
 ul.page-numbers>li>*:hover,
 ul.page-numbers>li>*:focus,
 ul.page-numbers>li>*.current {
-    background-color: #fab702;
+    background-color: var(--main-color);
     color: #fff;
 }
 
@@ -1924,11 +1929,11 @@ ul.page-numbers>li>*.current {
 
 .post-meta li a:hover,
 .post-meta li a:focus {
-    color: #ffcc43;
+    color: var(--hover-color);
 }
 
 .post-meta i {
-    color: #fab702;
+    color: var(--main-color);
     font-size: 12px;
     margin-right: 6px;
 }
@@ -2014,7 +2019,7 @@ ul.page-numbers>li>*.current {
 
 .post-info td a:hover,
 .post-info td a:focus {
-    color: #fab702;
+    color: var(--main-color);
 }
 
 /***
@@ -2101,7 +2106,7 @@ ul.page-numbers>li>*.current {
 }
 
 .onsale {
-    background-color: #fab702;
+    background-color: var(--main-color);
     border-radius: 4px;
     color: #fff;
     font-family: "Montserrat", sans-serif;
@@ -2139,7 +2144,7 @@ ul.page-numbers>li>*.current {
 }
 
 .price {
-    color: #fab702;
+    color: var(--main-color);
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
 }
@@ -2251,7 +2256,7 @@ body.single-product .product-image {
 }
 
 .product-meta .posted-in a:hover {
-    color: #fab702;
+    color: var(--main-color);
 }
 
 .product-meta .sku-wrapper {
@@ -2564,7 +2569,7 @@ section.recent-news .title {
 
 .filter:not(.filter-dark) button:focus,
 .filter:not(.filter-dark) button.selected {
-    color: #fab702;
+    color: var(--main-color);
 }
 
 /* Dark filter version */
@@ -2611,7 +2616,7 @@ section.recent-news .title {
 }
 
 .filter-dark button.selected {
-    color: #fab702;
+    color: var(--main-color);
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -2733,7 +2738,7 @@ section.recent-news .title {
 }
 
 .projects-item .project-title {
-    color: #fab702;
+    color: var(--main-color);
     font-size: 14px;
     margin: 0 0 25px 0;
 }
@@ -2828,7 +2833,7 @@ section.recent-news .title {
 
 .nav-tabs a:hover,
 .nav-tabs a:focus {
-    color: #fab702;
+    color: var(--main-color);
 }
 
 @media (min-width: 768px) {
@@ -3231,7 +3236,7 @@ ul.testimonial-wrap {
 
 ul.testimonial-wrap .rating {
     font-family: fontAwesome;
-    color: #fab702;
+    color: var(--main-color);
     font-size: 12px;
 }
 
@@ -3410,8 +3415,8 @@ ul.testimonial-wrap .user-data .name-user {
 
 .form-group input:not([type="submit"]):focus,
 .form-group textarea:focus {
-    border-color: #fab702;
-    outline-color: #fab702;
+    border-color: var(--main-color);
+    outline-color: var(--main-color);
 }
 
 .form-group input:not([type="submit"]).alert,
@@ -3475,7 +3480,7 @@ form [class*="col-"]+[class*="col-"] {
 }
 
 input {
-    outline-color: #fab702;
+    outline-color: var(--main-color);
 }
 
 .contact-form .form-group textarea.alert {
@@ -3574,7 +3579,7 @@ input {
 }
 
 .alert-info-style-2 {
-    background: #fab702;
+    background: var(--main-color);
 }
 
 /* Alert Danger */
@@ -3675,7 +3680,7 @@ table.table>thead.bg-primary tr,
 table.table>thead tr.bg-primary,
 table.table>tfoot.bg-primary tr,
 table.table>tfoot tr.bg-primary {
-    background: #fab702;
+    background: var(--main-color);
 }
 
 table.table>tbody.bg-primary tr th,
