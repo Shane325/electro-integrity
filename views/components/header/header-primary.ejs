@@ -1,16 +1,11 @@
-<!-- Site Header -->
 <header class="site-header classic relative">
     <div class="container">
         <div class="header-wrap clearfix">
-            <!-- Logo -->
             <div class="logo pull-left">
-              <a href="/"> <img src="<%= common.assets %>/logo.png" alt="Logo" class="logo-img"> </a>
+                <a href="/"> <img src="<%= common.assets %>/logo.png" alt="Logo" class="logo-img"> </a>
             </div>
-            <!-- /Logo -->
-            <!-- Site navigation -->
             <nav class="site-navigation pull-right">
                 <div class="mobile-wrap">
-                    <!-- Main menu -->
                     <ul id="main-menu" class="main-menu">
                         <li class="menu-item <% if(state === 'home') { %>current-menu-item<% } %>"><a href="/">Home</a></li>
                         <li class="menu-item <% if(state === 'about') { %>current-menu-item<% } %>"><a href="/about">About us</a></li>
@@ -18,17 +13,13 @@
                         <li class="menu-item <% if(state === 'projects') { %>current-menu-item<% } %>"><a href="/projects">Projects</a></li>
                         <li class="menu-item <% if(state === 'contact') { %>current-menu-item<% } %>"><a href="/contact">Contact</a></li>
                     </ul>
-                    <!-- /Main menu -->
                 </div>
-                <!-- Mobile navigation toggle --><button class="burger pull-right">
+                <button class="burger pull-right">
 		<span class="burger-top"></span>
 		<span class="burger-middle"></span>
 		<span class="burger-bottom"></span>
 	</button>
-                <!-- /Mobile navigation toggle -->
             </nav>
-            <!-- /Site navigation -->
         </div>
     </div>
-    <!-- /container -->
 </header>

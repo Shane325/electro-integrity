@@ -3824,3 +3824,15 @@ img.error404 {
 .rev_slider video {
   object-fit: contain !important;
 }
+
+.logo-img {
+  height: auto;
+  width: 300px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .logo-img {
+    height: auto;
+    width: 200px;
+  }  
+}
