@@ -1,0 +1,39 @@
+<header class="site-header transparent">
+    <div class="container">
+        <div class="header-wrap clearfix">
+            <div class="logo pull-left">
+                <a href="/"> <img src="<%= common.assets %>/logo-white.png" alt="Logo" class="logo-img"> </a>
+            </div>
+            <nav class="site-navigation pull-right">
+                <div class="mobile-wrap">
+                    <div class="above-nav-bar">
+                        <ul class="contact-info transparent">
+                            <li><i class="fa fa-phone"></i> <span class="important"><%= common.phone.display %></span></li>
+                            <li><i class="fa fa-envelope"></i>
+                                <a href="mailto:<%= common.email %>">
+                                    <%= common.email %>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="social social-transparent-border">
+                            <li><a href="<%= common.social.yelp %>" target="_blank"><i class="fa fa-yelp"></i></a></li>
+                            <li><a href="<%= common.social.google %>" target="_blank"><i class="fa fa-google"></i></a></li>
+                        </ul>
+                    </div>
+                    <ul id="main-menu" class="main-menu">
+                        <li class="menu-item <% if(state === 'home') { %>current-menu-item<% } %>"><a href="/">Home</a></li>
+                        <li class="menu-item <% if(state === 'about') { %>current-menu-item<% } %>"><a href="/about">About us</a></li>
+                        <li class="menu-item <% if(state === 'services') { %>current-menu-item<% } %>"><a href="/services">Services</a></li>
+                        <li class="menu-item <% if(state === 'projects') { %>current-menu-item<% } %>"><a href="/projects">Projects</a></li>
+                        <li class="menu-item <% if(state === 'contact') { %>current-menu-item<% } %>"><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Mobile navigation toggle --><button class="burger pull-right">
+		<span class="burger-top"></span>
+		<span class="burger-middle"></span>
+		<span class="burger-bottom"></span>
+	</button>
+            </nav>
+        </div>
+    </div>
+</header>

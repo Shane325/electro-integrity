@@ -1,6 +1,7 @@
 <% if (state === 'contact') { %>
     <script>
-        function initMap() {
+        function initMap()
+        {
             var sf = {
                 lat: 37.76471859999999,
                 lng: -122.43194010000002
@@ -32,7 +33,7 @@
                         /* Documentation: http://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/ */
                         jQuery(document).ready(function()
                         {
-                            jQuery('#slider1').revolution(
+                            jQuery('#slider1').show().revolution(
                             {
                                 sliderType: 'standard',
                                 sliderLayout: 'auto',
@@ -40,30 +41,25 @@
                                 gridwidth: [1200, 992, 786,
                                     480
                                 ],
-                                gridheight: [740, 600, 500,
+                                gridheight: [940, 600, 500,
                                     400
                                 ],
                                 responsiveLevels: [1200, 992,
                                     786,
                                     480
                                 ],
-                                navigation:
-                                 {
-                                     arrows:
-                                     {
-                                         style: 'construction-arrows',
-                                         enable: false,
-                                         left:
-                                         {
-                                             h_offset: 0
-                                         },
-                                         right:
-                                         {
-                                             h_offset: 0
-                                         },
-                                     },
-                                     onHoverStop: 'off'
-                                 }
+                                parallax:
+                                {
+                                    type: 'mouse+scroll',
+                                    origo: 'slidercenter',
+                                    speed: 200,
+                                    levels: [5, 10, 15, 20,
+                                        25, 30, 35, 40,
+                                        45, 46, 47, 48,
+                                        49, 50, 51, 55
+                                    ],
+                                    disable_onmobile: 'on'
+                                }
                             });
                         });
                     </script>
